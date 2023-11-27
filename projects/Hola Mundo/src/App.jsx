@@ -1,26 +1,40 @@
+import "../src/app.css"
 import "../src/index.css"
+import { TwitterFollowCard } from "./TwitterFollowCard.jsx"
+
+
 export function App() {
+    return (
+        <div className="App">
+            <TwitterFollowCard
+                userName="midudev">
+                Miguel Angel Duran {/*hola soy un comentario*/}
+            </TwitterFollowCard>
 
 
-return (
-    <article className="tw-followCard">
+            <TwitterFollowCard
+                userName="jmilei"
+                Name="Javier Milei">
+                Javier Milei
+            </TwitterFollowCard>
 
-        <header className="tw-followCard-header">
-            <img  className="tw-followCard-avatar" src="/src/assets/imagen/IMAGEN PERFIL.jpg" alt="foto rodri" />
+            <TwitterFollowCard
+                userName="madorni"
+                Name="Mariano Adorni">
+                Mariano Ardoni
+            </TwitterFollowCard>
 
-            <div className="tw-followCard-info">
-                <strong>Rodrigo Allende</strong>
-                <span className="tw-followCard-infoUserName" >@rodriAllende</span>
+            <TwitterFollowCard
+                userName="cristiancim"
+                Name="Cristian Cimmi" >
+                Cristian Cimi
+            </TwitterFollowCard>
 
-            </div>
-        </header>
-        <aside>
-            <button className="tw-followCard-button" >
-                Seguir
-            </button>
-        </aside>
+        </div>
 
 
-    </article> 
-)
+
+    )
+
+
 }

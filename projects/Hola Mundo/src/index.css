@@ -1,10 +1,3 @@
-body{
-  margin: 0;
-  display: grid;
-  place-content: center;
-  min-height: 100vh;
-  background-color: #000;
-}
 
 
 .tw-followCard {
@@ -46,5 +39,46 @@ body{
   font-weight: bold;
   border: 1px solid #000;
   transition: .3s ease background-color;
+
 }
 
+.tw-followCard-button.is-following{
+  border: 1px solid grey;
+  background: transparent;
+  color: #fff;
+  width: 120px;
+ }
+
+.tw-followCard-button:hover {
+  opacity: .8;
+}
+
+.tw-followCard-button.is-following:hover{
+background: red;
+background-color:  rgb(255,102, 102);
+border:  1px solid red;
+
+
+}  
+
+.tw-followCard-button.is-following:hover .tw-followCard-stopFollow{
+
+display: block;
+}
+
+
+
+.tw-followCard-text{
+  display: block;
+}
+.tw-followCard-button.is-following:hover .tw-followCard-text{
+  display: none;
+}
+
+
+
+
+.tw-followCard-stopFollow {display: none;
+
+
+}
